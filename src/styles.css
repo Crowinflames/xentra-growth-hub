@@ -19,6 +19,15 @@
  */
 
 @theme inline {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --color-petroleo: var(--petroleo);
+  --color-turquesa: var(--turquesa);
+  --color-turquesa-claro: var(--turquesa-claro);
+  --color-gris-claro: var(--gris-claro);
+  --color-gris-secundario: var(--gris-secundario);
+  --color-gris-medio: var(--gris-medio);
+  --color-gris-oscuro: var(--gris-oscuro);
+  --color-naranja: var(--naranja);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -63,25 +72,33 @@
 
 :root {
   --radius: 0.625rem;
+  --petroleo: oklch(0.2405 0.0407 254.4);
+  --turquesa: oklch(0.4801 0.0834 210.5);
+  --turquesa-claro: oklch(0.6862 0.1052 199.5);
+  --gris-claro: oklch(0.9673 0.0041 247.9);
+  --gris-secundario: oklch(0.8903 0.0086 240.6);
+  --gris-medio: oklch(0.5514 0.0227 264.4);
+  --gris-oscuro: oklch(0.2781 0.0296 256.8);
+  --naranja: oklch(0.6926 0.2073 43.2);
   --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --foreground: var(--petroleo);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: var(--petroleo);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --popover-foreground: var(--petroleo);
+  --primary: var(--naranja);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: var(--gris-claro);
+  --secondary-foreground: var(--petroleo);
+  --muted: var(--gris-claro);
+  --muted-foreground: var(--gris-medio);
+  --accent: var(--turquesa);
+  --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --border: var(--gris-secundario);
+  --input: var(--gris-secundario);
+  --ring: var(--turquesa);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -140,5 +157,50 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--turquesa);
+    outline-offset: 2px;
+  }
+}
+
+@utility kicker {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* Brochazo diagonal — firma visual de Xentra */
+@utility brochazo {
+  position: absolute;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    var(--turquesa) 18%,
+    var(--turquesa-claro) 62%,
+    transparent 100%
+  );
+  clip-path: polygon(18% 0%, 100% 6%, 82% 100%, 0% 92%);
+}
+
+@utility trazo-naranja {
+  display: block;
+  height: 6px;
+  width: 68px;
+  background: var(--naranja);
+  transform: skewX(-24deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
   }
 }
