@@ -11,13 +11,16 @@ export type Programa = {
   nombre: string;
   duracion: string;
   modalidad: string;
-  inversion: string;
+  inversion?: string;
   becas: Beca[];
   badge: string;
   resumen: string;
   incluye: string[];
   inscripcionesDesde?: string;
   cohorteInicio?: string;
+  cta: string;
+  ctaHref: string;
+  ctaExternal?: boolean;
 };
 
 export const programas: Programa[] = [
@@ -44,6 +47,30 @@ export const programas: Programa[] = [
     ],
     inscripcionesDesde: "24 de agosto de 2026",
     cohorteInicio: "6 de octubre de 2026",
+    cta: "Reserva tu cupo",
+    ctaHref: "#cta-final",
+  },
+  {
+    slug: "liderar-con-ia-sin-perder-identidad",
+    nombre: "Liderar con IA sin Perder Identidad",
+    duracion: "2 sesiones · 8 horas académicas",
+    modalidad: "Virtual en vivo",
+    becas: [],
+    badge: "Cohorte inicia el 21 de octubre de 2026",
+    resumen:
+      "Taller práctico para líderes que quieren integrar la IA en su gestión sin perder el criterio humano, la autoridad personal ni la confianza del equipo.",
+    incluye: [
+      "2 sesiones virtuales en vivo de 4 horas cada una",
+      "8 horas académicas de formación ejecutiva",
+      "Casos prácticos de liderazgo con herramientas de IA",
+      "Plantillas de prompts aplicables a tu contexto",
+      "Certificado digital de Xentra",
+    ],
+    cohorteInicio: "21 de octubre de 2026",
+    cta: "Solicitar información",
+    ctaHref:
+      "https://wa.me/51941200421?text=Hola,%20quiero%20información%20sobre%20Liderar%20con%20IA%20sin%20Perder%20Identidad",
+    ctaExternal: true,
   },
 ];
 
