@@ -1,64 +1,49 @@
 // PLACEHOLDER: contenido editable. Reemplazar con datos reales de Xentra.
 
+export type Beca = {
+  nombre: string;
+  inversion: string;
+  nota?: string;
+};
+
 export type Programa = {
   slug: string;
   nombre: string;
   duracion: string;
   modalidad: string;
-  precio: string;
+  inversion: string;
+  becas: Beca[];
   badge: string;
   resumen: string;
   incluye: string[];
+  inscripcionesDesde?: string;
+  cohorteInicio?: string;
 };
 
 export const programas: Programa[] = [
   {
-    slug: "liderazgo-de-equipos-en-accion",
-    nombre: "Liderazgo de Equipos en Acción",
-    duracion: "6 semanas",
-    modalidad: "Online en vivo · 2 sesiones/semana",
-    precio: "S/XXX",
-    badge: "Precio fundacional",
-    resumen:
-      "Conduce a tu equipo con criterios claros de delegación, feedback y seguimiento semanal.",
-    incluye: [
-      "Rituales de equipo: 1:1, weekly y cierre de mes",
-      "Guion de conversaciones difíciles y feedback",
-      "Matriz de delegación aplicada a tu propio equipo",
-      "Plan de 30 días con seguimiento del mentor",
+    slug: "primer-liderazgo-ruta-liderazgo",
+    nombre: "Primer Liderazgo",
+    duracion: "5 sesiones · 20 horas académicas",
+    modalidad: "Virtual en vivo",
+    inversion: "S/650",
+    becas: [
+      { nombre: "Media beca", inversion: "S/325", nota: "50% de beca" },
+      { nombre: "Beca 30%", inversion: "S/455", nota: "30% de beca" },
+      { nombre: "Beneficio", inversion: "S/520", nota: "20% de beca" },
     ],
-  },
-  {
-    slug: "gestion-del-cambio-para-mandos-medios",
-    nombre: "Gestión del Cambio para Mandos Medios",
-    duracion: "5 semanas",
-    modalidad: "Online en vivo · 1 sesión/semana + taller",
-    precio: "S/XXX",
-    badge: "Cupos limitados",
+    badge: "Inscripciones abren el 24 de agosto",
     resumen:
-      "Implementa cambios sin perder al equipo en el camino: resistencia, comunicación y adopción.",
+      "Tu primera ruta de liderazgo para comenzar a conducir equipos con criterio, conversaciones claras y seguimiento aplicado.",
     incluye: [
-      "Mapa de actores y resistencias de tu iniciativa",
-      "Plan de comunicación del cambio en 1 página",
-      "Métricas de adopción y puntos de control",
-      "Revisión en vivo de tu caso real",
+      "5 sesiones virtuales en vivo de alto impacto",
+      "20 horas académicas de formación ejecutiva",
+      "Herramientas aplicables a tu equipo desde la primera sesión",
+      "Acceso a grabaciones y material de trabajo",
+      "Certificado digital de Xentra",
     ],
-  },
-  {
-    slug: "comunicacion-ejecutiva-de-alto-impacto",
-    nombre: "Comunicación Ejecutiva de Alto Impacto",
-    duracion: "4 semanas",
-    modalidad: "Online en vivo · sesiones de práctica grabada",
-    precio: "S/XXX",
-    badge: "Precio fundacional",
-    resumen:
-      "Presenta ante dirección con estructura, datos y una recomendación clara en menos de 10 minutos.",
-    incluye: [
-      "Estructura de recomendación ejecutiva",
-      "Práctica grabada con retroalimentación individual",
-      "Plantillas de comité y reporte mensual",
-      "Manejo de preguntas difíciles",
-    ],
+    inscripcionesDesde: "24 de agosto de 2026",
+    cohorteInicio: "6 de octubre de 2026",
   },
 ];
 
