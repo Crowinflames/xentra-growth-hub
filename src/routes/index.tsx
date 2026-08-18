@@ -118,9 +118,8 @@ function Hero() {
             <Claim />
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-gris-oscuro">
-            Formación ejecutiva práctica para líderes de equipo. Sin diplomados eternos ni teoría
-            que se memoriza y se olvida: herramientas que aplicas con tu equipo desde la primera
-            semana.
+            En Xentra formamos a quienes no se conforman: aprendes de forma práctica y lo aplicas
+            desde el primer día.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <CtaPrimary href="#programas">Ver programas</CtaPrimary>
