@@ -36,7 +36,7 @@ export const programas: Programa[] = [
       { nombre: "Beca 30%", inversion: "S/455", nota: "30% de beca" },
       { nombre: "Beneficio", inversion: "S/520", nota: "20% de beca" },
     ],
-    badge: "Inscripciones abren el 24 de agosto",
+    badge: "Vacantes limitadas",
     resumen:
       "Tu primera ruta de liderazgo para comenzar a conducir equipos con criterio, conversaciones claras y seguimiento aplicado.",
     incluye: [
@@ -47,8 +47,8 @@ export const programas: Programa[] = [
       "Certificado digital de Xentra",
     ],
     inscripcionesDesde: "24 de agosto de 2026",
-    cohorteInicio: "6 de octubre de 2026",
-    cta: "Reserva tu cupo",
+    grupoInicio: "6 de octubre de 2026",
+    cta: "Reserva tu vacante",
     ctaHref: "#cta-final",
   },
   {
@@ -57,7 +57,7 @@ export const programas: Programa[] = [
     duracion: "2 sesiones · 8 horas académicas",
     modalidad: "Virtual en vivo",
     becas: [],
-    badge: "Cohorte inicia el 21 de octubre de 2026",
+    badge: "Nuevo taller",
     resumen:
       "Taller práctico para líderes que quieren integrar la IA en su gestión sin perder el criterio humano, la autoridad personal ni la confianza del equipo.",
     incluye: [
@@ -67,7 +67,8 @@ export const programas: Programa[] = [
       "Plantillas de prompts aplicables a tu contexto",
       "Certificado digital de Xentra",
     ],
-    cohorteInicio: "21 de octubre de 2026",
+    grupoInicio: "21 de octubre de 2026",
+    preventa: "Beneficio de preventa para los primeros interesados",
     cta: "Solicitar información",
     ctaHref:
       "https://wa.me/51941200421?text=Hola,%20quiero%20información%20sobre%20Liderar%20con%20IA%20sin%20Perder%20Identidad",
@@ -82,7 +83,7 @@ export const faqs = [
   },
   {
     q: "¿Los programas son 100% online?",
-    a: "Sí. Las sesiones son online y en vivo, con grabación disponible. Cada cohorte incluye trabajo aplicado sobre tu propio equipo entre sesión y sesión.",
+    a: "Sí. Las sesiones son online y en vivo, con grabación disponible. Cada grupo incluye trabajo aplicado sobre tu propio equipo entre sesión y sesión.",
   },
   {
     q: "¿Recibo certificación?",
