@@ -154,22 +154,22 @@ function Hero() {
 
 const contrastes = [
   {
-    icon: Clock,
-    titulo: "Meses de teoría vs. semanas de práctica",
+    icon: BookOpen,
+    titulo: "Un Modelo Académico, no un temario",
     texto:
-      "La formación ejecutiva tradicional te pide medio año antes de ver un cambio. En Xentra el programa dura semanas y cada sesión termina con algo que aplicas en tu equipo.",
+      "Cada programa se diseña bajo el Modelo Académico Xentra: aprendizaje experiencial, aplicación inmediata y mejora continua basada en evidencia. Desarrollamos capacidades, no acumulamos contenido.",
   },
   {
-    icon: Repeat,
-    titulo: "Memorizar vs. desarrollar capacidades",
+    icon: Users,
+    titulo: "Dictado por quienes lideran hoy",
     texto:
-      "No evaluamos cuánto recuerdas de un marco conceptual, sino qué conversación tuviste, qué acuerdo cerraste y qué cambió en tu equipo esa semana.",
+      "Nuestros mentores dirigen equipos y decisiones reales en empresas reconocidas. Traen al aula lo que están viviendo ahora, no solo teoría de hace años.",
   },
   {
-    icon: Target,
-    titulo: "Casos ajenos vs. tu propio caso",
+    icon: Zap,
+    titulo: "Te lo llevas puesto desde la primera sesión",
     texto:
-      "Trabajas sobre tu equipo real, tus indicadores y tus conflictos actuales. El material de estudio eres tú y el problema que tienes hoy sobre la mesa.",
+      "Cada sesión termina con algo que aplicas de inmediato: una herramienta, un plan, una conversación que tienes esa misma semana.",
   },
 ];
 
