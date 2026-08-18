@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Programas cortos y aplicables para líderes de equipo: liderazgo, gestión del cambio y comunicación ejecutiva. Precio fundacional y cupos limitados.",
+          "Programas cortos y aplicables para líderes de equipo: liderazgo, gestión del cambio y comunicación ejecutiva. Inversión fundacional y vacantes limitadas.",
       },
       {
         property: "og:title",
@@ -226,7 +226,7 @@ const pasos = [
     icon: BadgeCheck,
     titulo: "Plan de 30 días y cierre",
     texto:
-      "Terminas con un plan escrito de continuidad y una revisión de seguimiento para que la práctica no se apague al acabar la cohorte.",
+      "Terminas con un plan escrito de continuidad y una revisión de seguimiento para que la práctica no se apague al acabar el grupo.",
   },
 ];
 
@@ -271,8 +271,8 @@ function Programas() {
       <div className="relative mx-auto max-w-6xl px-5">
         <SectionTitle
           kicker="Programas"
-          title="Elige el programa y reserva tu cupo"
-          intro="Cohortes de lanzamiento con inversión fundacional. La oferta de IA está en validación: solicita información por WhatsApp y te contactamos."
+          title="Tu ruta de crecimiento empieza aquí."
+          intro="Menos tiempo en el aula, más cambio real en ti y en tu equipo."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {programas.map((p, i) => (
@@ -291,6 +291,10 @@ function Programas() {
                   <p className="mt-6 flex items-baseline gap-2">
                     <span className="text-3xl font-bold text-naranja">{p.inversion}</span>
                     <span className="text-xs text-gris-medio">inversión de lanzamiento</span>
+                  </p>
+                ) : p.preventa ? (
+                  <p className="mt-6">
+                    <span className="text-2xl font-bold text-naranja md:text-3xl">{p.preventa}</span>
                   </p>
                 ) : null}
 
@@ -340,7 +344,7 @@ const diferenciadores = [
   {
     icon: Wallet,
     titulo: "Precio fundacional",
-    texto: "Las primeras cohortes acceden a la tarifa de lanzamiento del programa completo.",
+    texto: "Los primeros grupos acceden a la tarifa de lanzamiento del programa completo.",
   },
   {
     icon: MonitorPlay,
@@ -520,17 +524,17 @@ function CtaFinal() {
     >
       <Brochazo className="top-[-60px] left-[-6%] h-64 w-[520px] rotate-6" opacity={0.3} />
       <div className="relative mx-auto max-w-4xl px-5">
-        <Kicker tone="light">Cupos de la cohorte de lanzamiento</Kicker>
+        <Kicker tone="light">Vacantes del grupo de lanzamiento</Kicker>
         <span className="trazo-naranja mt-5" />
         <h2 className="mt-5 text-3xl leading-tight font-extrabold tracking-tight md:text-5xl">
           <Claim variant="light" />
         </h2>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-gris-secundario">
-          Reserva tu cupo con precio fundacional y empieza a liderar distinto en las próximas
+          Reserva tu vacante con inversión fundacional y empieza a liderar distinto en las próximas
           semanas.
         </p>
         <div className="mt-9 flex flex-wrap gap-3">
-          <CtaPrimary href="#programas">Reserva tu cupo</CtaPrimary>
+          <CtaPrimary href="#programas">Reserva tu vacante</CtaPrimary>
           <CtaSecondary href="mailto:hola@xentra.pe" variant="light">
             Hablar con el equipo
           </CtaSecondary>
