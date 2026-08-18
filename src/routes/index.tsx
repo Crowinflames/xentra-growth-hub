@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Programas cortos y aplicables para líderes de equipo: liderazgo, gestión del cambio y comunicación ejecutiva. Precio fundacional y cupos limitados.",
+          "Programas cortos y aplicables para líderes de equipo: liderazgo, gestión del cambio y comunicación ejecutiva. Inversión fundacional y vacantes limitadas.",
       },
       {
         property: "og:title",
@@ -226,7 +226,7 @@ const pasos = [
     icon: BadgeCheck,
     titulo: "Plan de 30 días y cierre",
     texto:
-      "Terminas con un plan escrito de continuidad y una revisión de seguimiento para que la práctica no se apague al acabar la cohorte.",
+      "Terminas con un plan escrito de continuidad y una revisión de seguimiento para que la práctica no se apague al acabar el grupo.",
   },
 ];
 
@@ -271,8 +271,8 @@ function Programas() {
       <div className="relative mx-auto max-w-6xl px-5">
         <SectionTitle
           kicker="Programas"
-          title="Elige el programa y reserva tu cupo"
-          intro="Cohortes de lanzamiento con inversión fundacional. La oferta de IA está en validación: solicita información por WhatsApp y te contactamos."
+          title="Tu ruta de crecimiento empieza aquí."
+          intro="Menos tiempo en el aula, más cambio real en ti y en tu equipo."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {programas.map((p, i) => (
@@ -340,7 +340,7 @@ const diferenciadores = [
   {
     icon: Wallet,
     titulo: "Precio fundacional",
-    texto: "Las primeras cohortes acceden a la tarifa de lanzamiento del programa completo.",
+    texto: "Los primeros grupos acceden a la tarifa de lanzamiento del programa completo.",
   },
   {
     icon: MonitorPlay,
