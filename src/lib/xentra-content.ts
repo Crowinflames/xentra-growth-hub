@@ -17,7 +17,8 @@ export type Programa = {
   resumen: string;
   incluye: string[];
   inscripcionesDesde?: string;
-  cohorteInicio?: string;
+  grupoInicio?: string;
+  preventa?: string;
   cta: string;
   ctaHref: string;
   ctaExternal?: boolean;
