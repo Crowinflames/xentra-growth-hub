@@ -272,9 +272,9 @@ function Programas() {
         <SectionTitle
           kicker="Programas"
           title="Elige el programa y reserva tu cupo"
-          intro="Cohortes de lanzamiento con precio fundacional. Nombres, fechas y precios son placeholders editables hasta confirmar la oferta definitiva."
+          intro="Cohortes de lanzamiento con inversión fundacional. La oferta de IA está en validación: solicita información por WhatsApp y te contactamos."
         />
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
           {programas.map((p, i) => (
             <Reveal key={p.slug} delay={i * 90}>
               <article className="flex h-full flex-col rounded-xl border border-gris-secundario bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-turquesa/40 hover:shadow-[0_24px_50px_-30px_rgba(13,27,42,0.55)]">
@@ -287,10 +287,12 @@ function Programas() {
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-gris-oscuro">{p.resumen}</p>
 
-                <p className="mt-6 flex items-baseline gap-2">
-                  <span className="text-3xl font-bold text-naranja">{p.precio}</span>
-                  <span className="text-xs text-gris-medio">precio de lanzamiento</span>
-                </p>
+                {p.inversion ? (
+                  <p className="mt-6 flex items-baseline gap-2">
+                    <span className="text-3xl font-bold text-naranja">{p.inversion}</span>
+                    <span className="text-xs text-gris-medio">inversión de lanzamiento</span>
+                  </p>
+                ) : null}
 
                 <ul className="mt-6 space-y-3 border-t border-gris-secundario pt-6">
                   {p.incluye.map((item) => (
@@ -306,9 +308,20 @@ function Programas() {
                   ))}
                 </ul>
 
-                <CtaPrimary href="#cta-final" className="mt-8 w-full">
-                  Reservar cupo
-                </CtaPrimary>
+                {p.ctaExternal ? (
+                  <a
+                    href={p.ctaHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 w-full inline-flex items-center justify-center rounded-md bg-naranja px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:brightness-110"
+                  >
+                    {p.cta}
+                  </a>
+                ) : (
+                  <CtaPrimary href={p.ctaHref} className="mt-8 w-full">
+                    {p.cta}
+                  </CtaPrimary>
+                )}
               </article>
             </Reveal>
           ))}
