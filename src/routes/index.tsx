@@ -151,50 +151,6 @@ function Hero() {
   );
 }
 
-function Hero() {
-  return (
-    <section className="relative overflow-hidden bg-white pt-14 pb-16 md:pt-20 md:pb-24">
-      <Brochazo className="top-[-90px] right-[-6%] h-64 w-[520px] rotate-3" opacity={0.13} />
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-[1.05fr_0.95fr]">
-        <div>
-          <Kicker>Ecosistema educativo Xentra</Kicker>
-          <span className="trazo-naranja mt-5" />
-          <h1 className="mt-5 text-left text-4xl leading-[1.08] font-extrabold tracking-tight md:text-6xl">
-            <Claim />
-          </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-gris-oscuro">
-            En Xentra formamos a quienes no se conforman: aprendes de forma práctica y lo aplicas
-            desde el primer día.
-          </p>
-          <div className="mt-9 flex flex-wrap gap-3">
-            <CtaPrimary href="#programas">Ver programas</CtaPrimary>
-            <CtaSecondary href="#metodologia">Conoce la metodología</CtaSecondary>
-          </div>
-          <p className="mt-6 text-sm text-gris-medio">
-            Programas de 4 a 6 semanas · Online en vivo · Precio fundacional de lanzamiento
-          </p>
-        </div>
-
-        <div className="relative">
-          <span
-            aria-hidden="true"
-            className="absolute -top-6 -left-6 h-40 w-40 rounded-full bg-turquesa-claro/20"
-          />
-          <img
-            src={heroLider}
-            alt="Líder de equipo explicando un plan de trabajo a dos colaboradores frente a una pizarra"
-            width={1200}
-            height={1408}
-            className="relative aspect-[4/5] w-full rounded-xl object-cover shadow-[0_30px_60px_-30px_rgba(13,27,42,0.5)]"
-          />
-          <p className="mt-2 text-xs text-gris-medio">
-            Imagen referencial — reemplazar con fotografía real de Xentra.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 const contrastes = [
   {
