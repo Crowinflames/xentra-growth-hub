@@ -82,8 +82,8 @@ export const faqs = [
     a: "El curso \"Primer Liderazgo\" tiene una inversión de S/ 650.\nPróximamente comunicaremos el valor del taller \"Liderar con IA sin perder identidad\"",
   },
   {
-    q: "¿Los programas son 100% online?",
-    a: "Sí. Las sesiones son online y en vivo, con grabación disponible. Cada grupo incluye trabajo aplicado sobre tu propio equipo entre sesión y sesión.",
+    q: "¿En qué se diferencia de un diplomado tradicional?",
+    a: "En que aplicas lo aprendido desde el primer día, no al final de varios meses. Cada sesión termina con algo concreto que llevas a tu día a día, y el programa completo dura semanas, no meses.",
   },
   {
     q: "¿Recibo certificación?",
