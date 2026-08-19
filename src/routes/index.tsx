@@ -269,67 +269,6 @@ function Contraste() {
   );
 }
 
-const pasos = [
-  {
-    n: "01",
-    icon: Compass,
-    titulo: "Diagnóstico de tu contexto",
-    texto:
-      "Antes de la primera sesión defines el equipo, el problema y el resultado que quieres mover. Todo el programa se ordena alrededor de eso.",
-  },
-  {
-    n: "02",
-    icon: Users,
-    titulo: "Sesiones en vivo, práctica dirigida",
-    texto:
-      "Cada encuentro es taller: simulación de conversaciones, revisión de casos del grupo y retroalimentación directa del mentor.",
-  },
-  {
-    n: "03",
-    icon: TrendingUp,
-    titulo: "Aplicación entre sesiones",
-    texto:
-      "Sales con una tarea concreta sobre tu equipo real y vuelves con evidencia: qué hiciste, qué respondió el equipo, qué ajustarías.",
-  },
-  {
-    n: "04",
-    icon: BadgeCheck,
-    titulo: "Plan de 30 días y cierre",
-    texto:
-      "Terminas con un plan escrito de continuidad y una revisión de seguimiento para que la práctica no se apague al acabar el grupo.",
-  },
-];
-
-function Metodologia() {
-  return (
-    <section id="metodologia" className="scroll-mt-24 bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-6xl px-5">
-        <SectionTitle
-          kicker="NUESTRA METODOLOGÍA"
-          title="Conocimiento que se vive cada día"
-          intro="Aprendes contenido nuevo, y sobre todo, desarrollas la capacidad de aplicarlo en tu día a día."
-        />
-        <ol className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {pasos.map((p, i) => (
-            <Reveal key={p.n} delay={i * 80}>
-              <li className="relative h-full list-none rounded-xl border border-gris-secundario p-7">
-                <span className="text-sm font-bold tracking-widest text-turquesa-claro">{p.n}</span>
-                <p.icon
-                  size={28}
-                  strokeWidth={1.75}
-                  className="mt-4 text-turquesa"
-                  aria-hidden="true"
-                />
-                <h3 className="mt-4 text-lg leading-snug font-bold text-petroleo">{p.titulo}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gris-oscuro">{p.texto}</p>
-              </li>
-            </Reveal>
-          ))}
-        </ol>
-      </div>
-    </section>
-  );
-}
 
 function Programas() {
   return (
