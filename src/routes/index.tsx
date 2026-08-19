@@ -235,9 +235,9 @@ function Metodologia() {
     <section id="metodologia" className="scroll-mt-24 bg-white py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5">
         <SectionTitle
-          kicker="Metodología Xentra"
-          title="Aprender haciendo, en cuatro pasos"
-          intro="El modelo prioriza el desarrollo de capacidades por encima de la transmisión de contenidos. Contenido pendiente de ajuste a la metodología definitiva de Xentra."
+          kicker="NUESTRA METODOLOGÍA"
+          title="Conocimiento que se vive cada día"
+          intro="Aprendes contenido nuevo, y sobre todo, desarrollas la capacidad de aplicarlo en tu día a día."
         />
         <ol className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {pasos.map((p, i) => (
