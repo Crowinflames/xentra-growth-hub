@@ -363,7 +363,7 @@ const diferenciadores = [
   },
   {
     icon: BadgeCheck,
-    titulo: "Certificado de capacitacion Xentra",
+    titulo: "Certificado de capacitación Xentra",
     texto: "El certificado detalla el proyecto aplicado, no solo la asistencia.",
   },
 ];
