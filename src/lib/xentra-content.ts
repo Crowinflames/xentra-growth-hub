@@ -98,8 +98,8 @@ export const faqs = [
     a: "Cada sesión queda grabada, así que puedes ponerte al día cuando puedas.",
   },
   {
-    q: "¿En qué se diferencia de un diplomado tradicional?",
-    a: "En duración y en foco: semanas en lugar de meses, y desarrollo de capacidades aplicadas en lugar de acumulación de teoría para un examen.",
+    q: "¿Recibo certificación?",
+    a: "Sí, al finalizar recibes el Certificado de Capacitación Xentra, que detalla el proyecto aplicado durante el programa, no solo tu asistencia.",
   },
 ];
 
