@@ -106,71 +106,45 @@ function Index() {
   );
 }
 
-function Comparativa() {
+function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white py-16 md:py-24">
-      <Brochazo className="bottom-[-70px] right-[-8%] h-48 w-[400px]" opacity={0.1} />
-      <div className="relative mx-auto max-w-6xl px-5">
-        <SectionTitle
-          kicker="NUESTRA METODOLOGÍA"
-          title="Conocimiento que se vive cada día"
-          intro="Aprendes contenido nuevo, y sobre todo, desarrollas la capacidad de aplicarlo en tu día a día."
-        />
-
-        <div className="mt-12 overflow-hidden">
-          {/* Desktop Table */}
-          <div className="hidden md:block">
-            <div className="grid grid-cols-3 text-center mb-4">
-              <div className="text-sm font-bold text-gris-medio uppercase tracking-wider py-4">Modelo tradicional</div>
-              <div className="text-sm font-bold text-petroleo uppercase tracking-wider py-4 bg-turquesa/5 rounded-t-xl border-x border-t border-turquesa/20">Modelo Xentra</div>
-              <div className="text-sm font-bold text-gris-medio uppercase tracking-wider py-4">Lo que ganas</div>
-            </div>
-            
-            <div className="space-y-3">
-              {comparativaMetodologia.map((item, i) => (
-                <div key={i} className="grid grid-cols-3 items-center">
-                  {/* Tradicional */}
-                  <div className="p-6 bg-gris-claro/50 rounded-l-xl text-gris-medio text-sm border-y border-l border-gris-secundario text-center">
-                    {item.tradicional}
-                  </div>
-                  
-                  {/* Xentra */}
-                  <div className="relative z-10 p-6 bg-white border-2 border-turquesa shadow-[0_10px_30px_-10px_rgba(15,104,120,0.2)] text-petroleo font-bold text-base text-center scale-105 rounded-xl flex items-center justify-center gap-2">
-                    <Check size={18} className="text-turquesa shrink-0" strokeWidth={3} />
-                    {item.xentra}
-                  </div>
-                  
-                  {/* Ganas */}
-                  <div className="p-6 bg-gris-claro/50 rounded-r-xl text-gris-medio text-sm border-y border-r border-gris-secundario text-center">
-                    {item.gana}
-                  </div>
-                </div>
-              ))}
-            </div>
+    <section className="relative overflow-hidden bg-white pt-14 pb-16 md:pt-20 md:pb-24">
+      <Brochazo className="top-[-90px] right-[-6%] h-64 w-[520px] rotate-3" opacity={0.13} />
+      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-[1.05fr_0.95fr]">
+        <div>
+          <Kicker>Ecosistema educativo Xentra</Kicker>
+          <span className="trazo-naranja mt-5" />
+          <h1 className="mt-5 text-left text-4xl leading-[1.08] font-extrabold tracking-tight md:text-6xl">
+            <Claim />
+          </h1>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-gris-oscuro">
+            En Xentra formamos a quienes no se conforman: aprendes de forma práctica y lo aplicas
+            desde el primer día.
+          </p>
+          <div className="mt-9 flex flex-wrap gap-3">
+            <CtaPrimary href="#programas">Ver programas</CtaPrimary>
+            <CtaSecondary href="#metodologia">Conoce la metodología</CtaSecondary>
           </div>
+          <p className="mt-6 text-sm text-gris-medio">
+            Programas de 4 a 6 semanas · Online en vivo · Precio fundacional de lanzamiento
+          </p>
+        </div>
 
-          {/* Mobile View: Vertical Stacks */}
-          <div className="md:hidden space-y-8">
-            {comparativaMetodologia.map((item, i) => (
-              <div key={i} className="space-y-2">
-                <div className="p-4 bg-gris-claro rounded-lg text-gris-medio text-xs border border-gris-secundario">
-                  <span className="block text-[10px] uppercase font-bold mb-1 opacity-60">Modelo tradicional</span>
-                  {item.tradicional}
-                </div>
-                <div className="p-5 bg-white border-2 border-turquesa rounded-xl text-petroleo font-bold text-sm shadow-md flex items-center gap-3">
-                  <Check size={18} className="text-turquesa shrink-0" strokeWidth={3} />
-                  <div>
-                    <span className="block text-[10px] uppercase font-bold mb-1 text-turquesa">Modelo Xentra</span>
-                    {item.xentra}
-                  </div>
-                </div>
-                <div className="p-4 bg-gris-claro rounded-lg text-gris-medio text-xs border border-gris-secundario">
-                  <span className="block text-[10px] uppercase font-bold mb-1 opacity-60">Lo que ganas</span>
-                  {item.gana}
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="relative">
+          <span
+            aria-hidden="true"
+            className="absolute -top-6 -left-6 h-40 w-40 rounded-full bg-turquesa-claro/20"
+          />
+          <img
+            src={heroLider}
+            alt="Líder de equipo explicando un plan de trabajo a dos colaboradores frente a una pizarra"
+            width={1200}
+            height={1408}
+            className="relative aspect-[4/5] w-full rounded-xl object-cover shadow-[0_30px_60px_-30px_rgba(13,27,42,0.55)]"
+          />
+          <p className="mt-2 text-xs text-gris-medio">
+            Imagen referencial — reemplazar con fotografía real de Xentra.
+          </p>
         </div>
       </div>
     </section>
