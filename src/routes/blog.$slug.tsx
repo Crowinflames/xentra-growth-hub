@@ -114,17 +114,20 @@ function ArticuloPage() {
             </span>
             <div className="text-sm">
               <p className="font-semibold text-petroleo">
-                {post.autor.nombre} <span className="text-xs font-medium text-gris-medio">(autor placeholder)</span>
+                {post.autor.nombre}
               </p>
               <p className="text-gris-medio">
                 {post.autor.cargo} · Publicado el {fecha(post.fecha)}
-                {post.actualizado !== post.fecha ? ` · Actualizado el ${fecha(post.actualizado)}` : ""} · {post.lectura}
+                {post.actualizado && post.actualizado !== post.fecha
+                  ? ` · Actualizado el ${fecha(post.actualizado)}`
+                  : ""}{" "}
+                · {post.lectura}
               </p>
             </div>
           </div>
         </div>
 
-        <div className="mx-auto max-w-4xl px-5">
+        <div className="relative mx-auto max-w-4xl px-5">
           <img
             src={post.imagen}
             alt={post.alt}
@@ -132,16 +135,18 @@ function ArticuloPage() {
             height={800}
             className="aspect-[3/2] w-full rounded-xl object-cover"
           />
-          <p className="mt-2 text-xs text-gris-medio">
-            Imagen referencial — reemplazar con fotografía real de Xentra.
-          </p>
+          <Brochazo className="bottom-[-46px] left-[6%] h-24 w-[320px]" opacity={0.16} />
         </div>
 
         <div className="mx-auto max-w-3xl px-5 py-12">
           {post.secciones.map((sec, i) => (
-            <section key={sec.h2} className="mb-10">
-              <h2 className="text-2xl leading-snug font-bold text-petroleo">{sec.h2}</h2>
-              <span className="trazo-naranja mt-4 !h-[4px] !w-12" />
+            <section key={sec.h2 ?? `s-${i}`} className="mb-10">
+              {sec.h2 ? (
+                <>
+                  <h2 className="text-2xl leading-snug font-bold text-petroleo">{sec.h2}</h2>
+                  <span className="trazo-naranja mt-4 !h-[4px] !w-12" />
+                </>
+              ) : null}
               {sec.parrafos.map((p) => (
                 <p key={p} className="mt-4 text-base leading-relaxed text-gris-oscuro">
                   {p}
@@ -158,7 +163,10 @@ function ArticuloPage() {
                 </ul>
               ) : null}
 
-              {i === 1 ? <CtaArticulo post={post} /> : null}
+              {sec.timeline ? <Timeline items={sec.timeline} /> : null}
+              {sec.cita ? <PullQuote texto={sec.cita.texto} autor={sec.cita.autor} /> : null}
+
+              {sec.h2 && i === 2 ? <CtaArticulo post={post} /> : null}
             </section>
           ))}
 
