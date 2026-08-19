@@ -202,6 +202,44 @@ function ArticuloPage() {
   );
 }
 
+function Timeline({ items }: { items: string[] }) {
+  return (
+    <div className="my-9 rounded-xl border border-gris-secundario bg-gris-claro p-6">
+      <ol className="flex flex-col gap-5 md:flex-row md:items-start md:gap-0">
+        {items.map((item, i) => (
+          <li key={item} className="relative flex items-start gap-4 md:flex-1 md:flex-col md:gap-3">
+            <span
+              aria-hidden="true"
+              className="absolute top-3 left-[5px] h-full w-[2px] bg-turquesa/30 md:top-[5px] md:left-auto md:h-[2px] md:w-full"
+            />
+            <span
+              aria-hidden="true"
+              className="relative z-10 mt-1 h-3 w-3 shrink-0 rounded-full bg-turquesa ring-4 ring-gris-claro md:mt-0"
+            />
+            <span className="relative z-10 pr-3 text-sm leading-snug font-semibold text-petroleo md:pb-0">
+              {item}
+            </span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}
+
+function PullQuote({ texto, autor }: { texto: string; autor: string }) {
+  return (
+    <figure className="my-10 border-l-4 border-naranja bg-gris-claro/70 py-6 pr-6 pl-6">
+      <span aria-hidden="true" className="block text-4xl leading-none font-extrabold text-turquesa">
+        “
+      </span>
+      <blockquote className="mt-2 text-xl leading-relaxed font-medium text-petroleo italic md:text-2xl">
+        {texto}
+      </blockquote>
+      <figcaption className="mt-4 text-sm font-semibold text-turquesa">— {autor}</figcaption>
+    </figure>
+  );
+}
+
 function CtaArticulo({ post }: { post: { programaRelacionado: string } }) {
   return (
     <aside className="my-10 rounded-xl border border-gris-secundario bg-gris-claro p-7">
