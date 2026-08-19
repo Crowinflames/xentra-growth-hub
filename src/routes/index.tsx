@@ -179,9 +179,9 @@ function Contraste() {
       <Brochazo className="bottom-[-80px] left-[-10%] h-52 w-[420px] -rotate-6" opacity={0.1} />
       <div className="relative mx-auto max-w-6xl px-5">
         <SectionTitle
-          kicker="El problema"
-          title="Aprendiste mucho. ¿Y qué cambió el lunes en tu equipo?"
-          intro="La mayoría de la formación directiva se diseñó para acumular contenido, no para cambiar la manera en que se lidera. Xentra invierte esa lógica."
+          kicker="NUESTRA PROMESA"
+          title="Lo que hace distinta a una formación Xentra"
+          intro="Tres decisiones que tomamos en cada programa, sin importar el área."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {contrastes.map((c, i) => (
