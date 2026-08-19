@@ -86,8 +86,8 @@ export const faqs = [
     a: "En que aplicas lo aprendido desde el primer día, no al final de varios meses. Cada sesión termina con algo concreto que llevas a tu día a día, y el programa completo dura semanas, no meses.",
   },
   {
-    q: "¿Recibo certificación?",
-    a: "Sí. Al completar el programa recibes un certificado digital de Xentra que indica horas, contenidos y el proyecto aplicado que desarrollaste.",
+    q: "¿Quién enseña en Xentra?",
+    a: "Nuestros mentores dirigen equipos y decisiones reales en empresas reconocidas hoy. Traen al aula lo que están viviendo en su día a día, no sólo teoría.",
   },
   {
     q: "¿Cuánto tiempo semanal necesito?",
