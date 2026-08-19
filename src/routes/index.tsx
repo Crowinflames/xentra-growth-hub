@@ -25,7 +25,7 @@ import {
   Reveal,
   SectionTitle,
 } from "@/components/xentra/brand";
-import { programas, faqs } from "@/lib/xentra-content";
+import { programas, faqs, comparativaMetodologia } from "@/lib/xentra-content";
 import { posts } from "@/lib/blog-data";
 import { ArticleCard } from "./blog.index";
 
