@@ -79,7 +79,7 @@ export const programas: Programa[] = [
 export const faqs = [
   {
     q: "¿Cuánto cuestan los programas?",
-    a: "Los programas de lanzamiento tienen precio fundacional desde S/XXX (placeholder editable). El precio siempre está visible en la sección Programas, sin cotizaciones ocultas.",
+    a: "El curso \"Primer Liderazgo\" tiene una inversión de S/ 650.\nPróximamente comunicaremos el valor del taller \"Liderar con IA sin perder identidad\"",
   },
   {
     q: "¿Los programas son 100% online?",
