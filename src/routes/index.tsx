@@ -353,7 +353,7 @@ const diferenciadores = [
   },
   {
     icon: Users,
-    titulo: "Grupos Adecuados",
+    titulo: "Grupos adecuados",
     texto: "El tamaño de cada grupo está pensado para que haya interacción real con el mentor, sin perder la dinámica de práctica en equipo.",
   },
   {
