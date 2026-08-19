@@ -35,7 +35,7 @@ export const Route = createFileRoute("/blog/$slug")({
             headline: post.titulo,
             description: post.bajada,
             datePublished: post.fecha,
-            dateModified: post.actualizado,
+            dateModified: post.actualizado ?? post.fecha,
             articleSection: post.categoria,
             author: { "@type": "Person", name: post.autor.nombre, jobTitle: post.autor.cargo },
             publisher: { "@type": "Organization", name: "Xentra" },
