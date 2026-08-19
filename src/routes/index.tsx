@@ -338,32 +338,32 @@ function Programas() {
 const diferenciadores = [
   {
     icon: Target,
-    titulo: "Práctico desde el día uno",
-    texto: "Cada sesión termina con una acción concreta para ejecutar con tu equipo esa semana.",
+    titulo: "Es un ecosistema, no solo un curso",
+    texto: "Cada programa que tomas en Xentra es parte de una ruta más grande, pensada para acompañar tu crecimiento a lo largo del tiempo.",
   },
   {
     icon: Wallet,
-    titulo: "Precio fundacional",
-    texto: "Los primeros grupos acceden a la tarifa de lanzamiento del programa completo.",
+    titulo: "Formación pensada para el mundo con IA",
+    texto: "Formamos el criterio que necesitas hoy, en un entorno donde la IA ya es parte de tu día a día.",
   },
   {
     icon: MonitorPlay,
     titulo: "Formato flexible",
-    texto: "Sesiones en vivo fuera del horario pico y grabaciones disponibles para repasar.",
+    texto: "Sesiones en vivo fuera de horario de oficina, con acceso a las grabaciones cuando las necesites.",
   },
   {
     icon: Users,
-    titulo: "Mentores en ejercicio",
-    texto: "Personas que lideran equipos hoy, no solo docencia. (Placeholder — ajustar perfiles.)",
+    titulo: "Grupos Adecuados",
+    texto: "El tamaño de cada grupo está pensado para que haya interacción real con el mentor, sin perder la dinámica de práctica en equipo.",
   },
   {
     icon: Clock,
     titulo: "3 a 4 horas por semana",
-    texto: "Diseñado para agendas de mandos medios con operación a cargo.",
+    texto: "Diseñado para agendas ocupadas, sin sacrificar profundidad.",
   },
   {
     icon: BadgeCheck,
-    titulo: "Certificado con evidencia",
+    titulo: "Certificado de capacitacion Xentra",
     texto: "El certificado detalla el proyecto aplicado, no solo la asistencia.",
   },
 ];
