@@ -102,3 +102,31 @@ export const faqs = [
     a: "En duración y en foco: semanas en lugar de meses, y desarrollo de capacidades aplicadas en lugar de acumulación de teoría para un examen.",
   },
 ];
+
+export const comparativaMetodologia = [
+  {
+    tradicional: "Enseña contenidos",
+    xentra: "Desarrolla capacidades",
+    gana: "Mayor transferencia al trabajo",
+  },
+  {
+    tradicional: "Programas por temas",
+    xentra: "Programas por desafíos reales",
+    gana: "Aprendizaje relevante",
+  },
+  {
+    tradicional: "Programas estáticos",
+    xentra: "Experiencias en evolución permanente",
+    gana: "Vigencia permanente",
+  },
+  {
+    tradicional: "El docente transmite",
+    xentra: "El conocimiento se co-crea",
+    gana: "Mayor participación",
+  },
+  {
+    tradicional: "Evalúa conocimientos",
+    xentra: "Evalúa aplicación e impacto",
+    gana: "Resultados observables",
+  },
+];
