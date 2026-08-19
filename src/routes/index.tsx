@@ -150,8 +150,6 @@ function Hero() {
     </section>
   );
 }
-
-
 const contrastes = [
   {
     icon: BookOpen,
