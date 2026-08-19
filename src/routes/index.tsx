@@ -94,7 +94,7 @@ function Index() {
       <main>
         <Hero />
         <Contraste />
-        <Comparativa />
+        <Testimonios />
         <Programas />
         <PorQue />
         <Faq />
