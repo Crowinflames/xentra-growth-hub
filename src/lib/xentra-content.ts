@@ -90,8 +90,8 @@ export const faqs = [
     a: "Nuestros mentores dirigen equipos y decisiones reales en empresas reconocidas hoy. Traen al aula lo que están viviendo en su día a día, no sólo teoría.",
   },
   {
-    q: "¿Los programas son 100% online?",
-    a: "Sí, todos nuestros programas son virtuales en vivo, con sesiones en tiempo real y grabaciones disponibles por si no puedes conectarte a alguna.",
+    q: "¿Cuánto tiempo semanal necesito?",
+    a: "Entre 3 y 4 horas por semana, pensado para agendas ocupadas sin sacrificar profundidad.",
   },
   {
     q: "¿Qué medios de pago aceptan?",
