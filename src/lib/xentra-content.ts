@@ -94,8 +94,8 @@ export const faqs = [
     a: "Entre 3 y 4 horas por semana, pensado para agendas ocupadas sin sacrificar profundidad.",
   },
   {
-    q: "¿Qué medios de pago aceptan?",
-    a: "Tarjeta de crédito y débito, transferencia bancaria y pago en cuotas para empresas. Emitimos factura y boleta.",
+    q: "¿Qué pasa si no puedo asistir a una sesión en vivo?",
+    a: "Cada sesión queda grabada, así que puedes ponerte al día cuando puedas.",
   },
   {
     q: "¿En qué se diferencia de un diplomado tradicional?",
