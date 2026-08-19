@@ -46,69 +46,85 @@ export const categorias = [
 export const posts: Post[] = [
   {
     slug: "como-liderar-un-equipo-de-alto-rendimiento",
-    titulo: "¿Cómo liderar un equipo de alto rendimiento? Guía completa",
+    titulo: "Cómo liderar cuando tu equipo no piensa como tú",
     bajada:
-      "Un equipo de alto rendimiento se construye con tres cosas concretas: objetivos medibles y compartidos, rituales de seguimiento constantes (1:1 y weekly) y conversaciones de feedback frecuentes. No depende del carisma del líder, sino del sistema de trabajo que instala.",
+      "Veinte años liderando equipos en Perú, México y Panamá me enseñaron que no existe una forma 'correcta' de liderar, solo una forma atenta. Hoy, con la IA como nueva compañera de gestión, esa lección importa más que nunca.",
     categoria: "Liderazgo de Equipos",
     pilar: true,
-    fecha: "2026-07-14",
-    actualizado: "2026-08-10",
-    lectura: "11 min",
+    fecha: "2026-07-13",
+    lectura: "9 min",
     imagen: blogLiderazgo,
-    alt: "Equipo de trabajo en sesión de planificación alrededor de una mesa con laptops y notas adhesivas",
-    autor: autorRuiz,
-    programaRelacionado: "Liderazgo de Equipos en Acción",
+    alt: "Una líder con experiencia conversa con dos colaboradoras más jóvenes alrededor de una laptop, con luz natural",
+    autor: autoraNicole,
+    programaRelacionado: "Primer Liderazgo",
     secciones: [
       {
-        h2: "¿Qué define a un equipo de alto rendimiento?",
         parrafos: [
-          "No es el talento individual: es la claridad. Un equipo de alto rendimiento sabe qué se espera de él, cómo se mide y cuándo se revisa. Cuando esas tres respuestas no existen, el esfuerzo se dispersa aunque las personas sean excelentes.",
-          "En la práctica, el líder que obtiene resultados sostenidos no trabaja más horas: instala un sistema de acuerdos y seguimiento que funciona incluso cuando él no está en la sala.",
+          "Empecé a liderar equipos hace más de 20 años, en Belcorp. Doce años ahí me enseñaron una primera versión de lo que significa dirigir personas. Posteriormente, una etapa que complementó mi aprendizaje fue cuando entré al rubro educativo: Nancy Matos me dio la oportunidad de sumarme al equipo de la Universidad ESAN, y de ahí mi ruta pasó por UPSJB, Certus, la Escuela de Postgrado de la UTP, y después proyectos que me llevaron hasta liderar el inicio de la gestión y lanzamiento de una nueva universidad en el Perú.",
         ],
-        bullets: [
-          "Objetivos escritos, con métrica y fecha",
-          "Roles y decisiones asignados a personas, no a áreas",
-          "Un ritmo fijo de revisión semanal",
-          "Feedback frecuente y de bajo drama",
+        timeline: [
+          "Belcorp",
+          "Universidad ESAN",
+          "UPSJB",
+          "Certus",
+          "Escuela de Postgrado UTP",
+          "Lanzamiento de nueva universidad",
         ],
       },
       {
-        h2: "¿Qué rituales necesita instalar el líder?",
         parrafos: [
-          "Tres rituales bastan para la mayoría de equipos: la 1:1 quincenal con cada persona, la reunión semanal de equipo enfocada en obstáculos, y el cierre mensual de resultados. Todo lo demás suele ser reunión sobrante.",
-          "La clave está en la disciplina del calendario: un ritual que se cancela dos veces deja de ser un ritual y vuelve a la gestión por urgencias.",
+          "En ese camino tuve la oportunidad de liderar equipos multifuncionales no solo en Lima, sino en México y Panamá, equipos multiculturales, con personas de Venezuela, Colombia, México, Centroamérica y el Caribe. Eso te abre la mente de una forma que ningún manual de liderazgo puede enseñarte: entiendes que nada es definitivo, que lo que crees saber depende del punto de vista de quien lo mira, de la cultura de donde viene, de la edad que tiene, de la 'mochila' que cada persona carga.",
+          "Posteriormente vino un nuevo gran reto: liderar en remoto. Claro, ya sabemos: 2020, llegó la pandemia. Ese fue otro reto mayor, distinto a todos los anteriores. Y pensé que, después de eso, ya lo había visto todo.",
+          "No fue así. Nada nos preparó para lo que nos enfrentamos hoy. La tecnología llegó a replantear el trabajo, y la inteligencia artificial dejó de ser una herramienta más para convertirse en algo distinto: un socio estratégico que no solo ejecuta tareas mecánicas, sino que colidera contigo, te acompaña en la gestión y te hace pensar más rápido y mejor. Y hay un punto adicional, no menos importante: las nuevas generaciones, tus colaboradores, los líderes que recién están empezando, llegan mucho más acostumbrados a esta tecnología que muchos líderes con más años en la institución. Ese cambio de orden, donde a veces el que menos años tiene es el que más domina la herramienta, es en sí mismo una lección de liderazgo.",
+          "Y ahí volví a aprender lo mismo que ya sabía desde Belcorp, desde México, desde Panamá, desde la pandemia: en liderazgo nada es estático, todo va cambiando, y tienes que ir un paso adelante. Pero lo más importante que aprendí en 20 años no fue una técnica ni un framework, fue no perder nunca la humanidad. Sentí, en cada uno de esos equipos, que éramos una gran familia. Y esa parte, ni la mejor IA del mundo te la puede reemplazar.",
         ],
       },
       {
-        h2: "¿Cómo se mide el avance sin caer en microgestión?",
+        h2: "Liderar equipos multiculturales te obliga a soltar certezas",
         parrafos: [
-          "Mide resultados y puntos de control acordados, no actividad diaria. Si necesitas saber a qué hora se conectó alguien, el problema no es la herramienta de control: es que el resultado esperado nunca se definió con precisión.",
-        ],
-        bullets: [
-          "Define 2-3 indicadores por persona, no diez",
-          "Acuerda hitos intermedios en entregables largos",
-          "Revisa desviaciones en la 1:1, no en público",
+          "Cuando lideras solo dentro de tu propia cultura, es fácil creer que tu forma de comunicar, de dar feedback o de tomar decisiones es 'la normal'. Liderar en México, en Panamá, con equipos venezolanos, colombianos, centroamericanos y caribeños, me quitó esa comodidad.",
+          "Hablando el mismo idioma, muchas veces no nos entendíamos. Podíamos hablar español, pero hay palabras que en el mejor de los casos no se entendían, y en otros casos se malinterpretaban. La forma de saludar, de tratar, de solicitar información, todo es diferente en cada cultura, y debes entender que no puedes dar nada por sentado. Todo lo tienes que desaprender para volver a aprenderlo.",
+          "No hay una manera 'correcta'. Es indispensable investigar, escuchar y encontrar la manera adecuada para cada realidad: observar antes de asumir.",
+          "Esto no es una técnica que se aplica una vez y ya. Es un músculo que se entrena liderando personas distintas a ti, una y otra vez.",
         ],
       },
       {
-        h2: "¿Qué hacer cuando el rendimiento cae?",
+        h2: "Liderar con IA sin dejar de liderar personas",
         parrafos: [
-          "Separa siempre tres causas posibles: falta de claridad, falta de capacidad o falta de motivación. Cada una se resuelve distinto, y tratarlas todas como problema de actitud es el error más caro que comete un mando medio.",
+          "La pandemia me enseñó a liderar en remoto, sin la sala físicamente compartida. La IA me está enseñando algo distinto: a liderar con un socio que piensa junto contigo, que te ayuda a decidir más rápido, pero que no reemplaza el criterio ni el vínculo humano que sostiene a un equipo.",
+          "El reto de hoy no es aprender a usar una herramienta más. Es aprender a coliderar: dejar que la IA haga lo que hace mejor, y quedarte tú con lo que solo un líder humano puede dar, la lectura del contexto, la conversación difícil, el criterio para saber cuándo apoyarte en la tecnología y cuándo no.",
+        ],
+      },
+      {
+        h2: "Nunca perder la humanidad",
+        parrafos: [
+          "Si tuviera que resumir 20 años liderando equipos en una sola idea, sería esta: la técnica se aprende, la tecnología se aprende, pero la humanidad es lo que hace que un equipo se sostenga en el tiempo.",
+          "Es humanidad genuina: saber que son personas, que a veces cargan situaciones que los preocupan, y que tienes que verlos, sentir que algo pasa y no dejarlo ahí. Preguntarles, ser empático. Muchas veces con solo escucharlos es suficiente, otras veces es necesario dar un paso más, pero lo importante es que te sientan genuinamente presente.",
+        ],
+        cita: {
+          texto:
+            "Para mí, mis equipos terminan siendo mi segunda familia, como mis hijos, a quienes enseño, aplaudo, cuido y protejo, sin perder el objetivo empresarial y comercial.",
+          autor: "Nicole Sanguineti",
+        },
+      },
+      {
+        parrafos: [
+          "Eso es, al final, lo que quiero que se lleve cualquier persona que pase por Primer Liderazgo: que liderar bien no es aplicar una fórmula ni dominar la herramienta de moda, es desarrollar el criterio para leer a tu equipo real y decidir, en cada momento, qué parte del liderazgo le corresponde a la tecnología y qué parte te corresponde a ti.",
         ],
       },
     ],
     faqs: [
       {
-        q: "¿Cuánto tarda en verse el cambio en un equipo?",
-        a: "Con rituales sostenidos, los primeros cambios de conducta se notan entre la cuarta y la sexta semana. Los indicadores de resultado suelen moverse hacia el segundo trimestre.",
+        q: "¿Liderar equipos multiculturales es muy distinto a liderar un equipo local?",
+        a: "Sí y no. Los fundamentos (claridad, seguimiento, feedback) siguen siendo los mismos. Lo que cambia es cómo los comunicas: la misma conversación que funciona en Lima puede necesitar un tono distinto en otro país. La clave es observar antes de asumir.",
       },
       {
-        q: "¿Cuántas personas puede liderar bien un mando medio?",
-        a: "Con 1:1 quincenales de calidad, entre 6 y 9 reportes directos es un rango manejable. Por encima de eso hay que delegar coordinación o espaciar el ritual.",
+        q: "¿La IA reemplaza el rol del líder?",
+        a: "No. La IA puede ayudarte a decidir más rápido y a organizar mejor la gestión, pero la lectura del contexto, la conversación difícil y el vínculo humano con tu equipo siguen siendo trabajo tuyo, no de la herramienta.",
       },
       {
-        q: "¿Sirve para equipos remotos?",
-        a: "Sí, y con más razón: en remoto los rituales escritos y el seguimiento acordado sustituyen la información informal del pasillo.",
+        q: "¿Cómo se sostiene la cercanía humana en equipos grandes o remotos?",
+        a: "Con intención, no con improvisación. Preguntar cómo está alguien de verdad, no solo cómo va el proyecto, es una decisión que tomas cada semana, sin importar si el equipo es de 5 o de 40 personas.",
       },
     ],
   },
