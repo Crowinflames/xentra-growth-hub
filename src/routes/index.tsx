@@ -334,7 +334,7 @@ function PorQue() {
 
 function Testimonios() {
   return (
-    <section className="relative overflow-hidden bg-white py-16 md:py-24">
+    <section id="metodologia" className="relative scroll-mt-24 overflow-hidden bg-white py-16 md:py-24">
       <Brochazo className="bottom-[-70px] right-[-8%] h-48 w-[400px]" opacity={0.1} />
       <div className="relative mx-auto max-w-6xl px-5">
         <SectionTitle
