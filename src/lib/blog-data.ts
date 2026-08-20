@@ -46,7 +46,7 @@ export const categorias = [
 export const posts: Post[] = [
   {
     slug: "como-liderar-un-equipo-de-alto-rendimiento",
-    titulo: "Cómo liderar cuando tu equipo no piensa como tú",
+    titulo: "Cómo liderar cuando nada es como aprendiste",
     bajada:
       "Veinte años liderando equipos en Perú, México y Panamá me enseñaron que no existe una forma 'correcta' de liderar, solo una forma atenta. Hoy, con la IA como nueva compañera de gestión, esa lección importa más que nunca.",
     categoria: "Liderazgo de Equipos",
