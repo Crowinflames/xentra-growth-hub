@@ -1,4 +1,5 @@
-import blogLiderazgo from "@/assets/blog-liderazgo.jpg";
+import blogLiderazgoAsset from "@/assets/blog-liderazgo.png.asset.json";
+const blogLiderazgo = blogLiderazgoAsset.url;
 import blogFeedback from "@/assets/blog-feedback.jpg";
 import blogComunicacion from "@/assets/blog-comunicacion.jpg";
 
