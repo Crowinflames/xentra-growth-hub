@@ -126,7 +126,7 @@ function Hero() {
             <CtaSecondary href="#metodologia">Conoce la metodología</CtaSecondary>
           </div>
           <p className="mt-6 text-sm text-gris-medio">
-            Programas de 4 a 6 semanas · Online en vivo · Precio fundacional de lanzamiento
+            Programas de 4 a 6 semanas · Online en vivo
           </p>
         </div>
 
