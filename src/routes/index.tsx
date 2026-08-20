@@ -14,7 +14,8 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { useState } from "react";
-import heroLider from "@/assets/hero-lider.jpg";
+import heroLiderAsset from "@/assets/hero-lider.jpg.asset.json";
+const heroLider = heroLiderAsset.url;
 import { Header, Footer } from "@/components/xentra/site-chrome";
 import {
   Brochazo,
@@ -137,14 +138,11 @@ function Hero() {
           />
           <img
             src={heroLider}
-            alt="Líder de equipo explicando un plan de trabajo a dos colaboradores frente a una pizarra"
-            width={1200}
-            height={1408}
+            alt="Líder de equipo sonriendo junto a dos colaboradores en una oficina moderna"
+            width={1122}
+            height={1402}
             className="relative aspect-[4/5] w-full rounded-xl object-cover shadow-[0_30px_60px_-30px_rgba(13,27,42,0.55)]"
           />
-          <p className="mt-2 text-xs text-gris-medio">
-            Imagen referencial — reemplazar con fotografía real de Xentra.
-          </p>
         </div>
       </div>
     </section>
