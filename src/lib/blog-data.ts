@@ -27,14 +27,22 @@ export type Post = {
 };
 
 // PLACEHOLDER: autores y contenido editorial pendientes de revisión por Xentra.
-const autorRuiz = { nombre: "Nombre Apellido", cargo: "Director académico, Xentra", iniciales: "NA" };
+const autorRuiz = {
+  nombre: "Nombre Apellido",
+  cargo: "Director académico, Xentra",
+  iniciales: "NA",
+};
 const autoraNicole = {
   nombre: "Nicole Sanguineti",
   cargo:
     "Más de 20 años liderando equipos, más de 10 años en Belcorp y más de 10 años en el sector educativo peruano",
   iniciales: "NS",
 };
-const autoraLopez = { nombre: "Nombre Apellido", cargo: "Mentora de liderazgo, Xentra", iniciales: "NA" };
+const autoraLopez = {
+  nombre: "Nombre Apellido",
+  cargo: "Mentora de liderazgo, Xentra",
+  iniciales: "NA",
+};
 
 export const categorias = [
   "Liderazgo de Equipos",

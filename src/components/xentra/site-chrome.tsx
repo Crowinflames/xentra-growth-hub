@@ -105,8 +105,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <Logo variant="light" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-gris-secundario/80">
-              Centro de Desarrollo Profesional. Formación ejecutiva práctica para líderes de
-              equipo.
+              Centro de Desarrollo Profesional. Formación ejecutiva práctica para líderes de equipo.
             </p>
             <p className="mt-6 text-[15px] font-semibold">
               <Claim variant="light" />
@@ -116,26 +115,56 @@ export function Footer() {
           <div>
             <p className="kicker text-turquesa-claro">Navegación</p>
             <ul className="mt-4 space-y-3 text-sm">
-              <li><a href="/#metodologia" className="hover:text-turquesa-claro">Metodología</a></li>
-              <li><a href="/#programas" className="hover:text-turquesa-claro">Programas</a></li>
-              <li><Link to="/blog" className="hover:text-turquesa-claro">Blog</Link></li>
-              <li><a href="/#faq" className="hover:text-turquesa-claro">Preguntas frecuentes</a></li>
+              <li>
+                <a href="/#metodologia" className="hover:text-turquesa-claro">
+                  Metodología
+                </a>
+              </li>
+              <li>
+                <a href="/#programas" className="hover:text-turquesa-claro">
+                  Programas
+                </a>
+              </li>
+              <li>
+                <Link to="/blog" className="hover:text-turquesa-claro">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <a href="/#faq" className="hover:text-turquesa-claro">
+                  Preguntas frecuentes
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
             <p className="kicker text-turquesa-claro">Contacto</p>
             <ul className="mt-4 space-y-3 text-sm">
-              <li><a href="mailto:hola@xentra.pe" className="hover:text-turquesa-claro">hola@xentra.pe</a></li>
-              <li><a href="https://www.linkedin.com" className="hover:text-turquesa-claro">LinkedIn</a></li>
-              <li><a href="https://www.instagram.com" className="hover:text-turquesa-claro">Instagram</a></li>
+              <li>
+                <a href="mailto:hola@xentra.pe" className="hover:text-turquesa-claro">
+                  hola@xentra.pe
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com" className="hover:text-turquesa-claro">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com" className="hover:text-turquesa-claro">
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-6 text-xs text-gris-secundario/70 md:flex md:items-center md:justify-between">
           <p>Estrategias que transforman. Personas que impactan. Resultados que perduran.</p>
-          <p className="mt-3 md:mt-0">© {new Date().getFullYear()} Xentra. Todos los derechos reservados.</p>
+          <p className="mt-3 md:mt-0">
+            © {new Date().getFullYear()} Xentra. Todos los derechos reservados.
+          </p>
         </div>
       </div>
     </footer>

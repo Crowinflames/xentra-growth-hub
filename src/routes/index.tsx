@@ -195,7 +195,6 @@ function Contraste() {
   );
 }
 
-
 function Programas() {
   return (
     <section
@@ -229,7 +228,9 @@ function Programas() {
                   </p>
                 ) : p.preventa ? (
                   <p className="mt-6">
-                    <span className="text-2xl font-bold text-naranja md:text-3xl">{p.preventa}</span>
+                    <span className="text-2xl font-bold text-naranja md:text-3xl">
+                      {p.preventa}
+                    </span>
                   </p>
                 ) : null}
 
@@ -274,22 +275,26 @@ const diferenciadores = [
   {
     icon: Target,
     titulo: "Es un ecosistema, no solo un curso",
-    texto: "Cada programa que tomas en Xentra es parte de una ruta más grande, pensada para acompañar tu crecimiento a lo largo del tiempo.",
+    texto:
+      "Cada programa que tomas en Xentra es parte de una ruta más grande, pensada para acompañar tu crecimiento a lo largo del tiempo.",
   },
   {
     icon: Wallet,
     titulo: "Formación pensada para el mundo con IA",
-    texto: "Formamos el criterio que necesitas hoy, en un entorno donde la IA ya es parte de tu día a día.",
+    texto:
+      "Formamos el criterio que necesitas hoy, en un entorno donde la IA ya es parte de tu día a día.",
   },
   {
     icon: MonitorPlay,
     titulo: "Formato flexible",
-    texto: "Sesiones en vivo fuera de horario de oficina, con acceso a las grabaciones cuando las necesites.",
+    texto:
+      "Sesiones en vivo fuera de horario de oficina, con acceso a las grabaciones cuando las necesites.",
   },
   {
     icon: Users,
     titulo: "Grupos adecuados",
-    texto: "El tamaño de cada grupo está pensado para que haya interacción real con el mentor, sin perder la dinámica de práctica en equipo.",
+    texto:
+      "El tamaño de cada grupo está pensado para que haya interacción real con el mentor, sin perder la dinámica de práctica en equipo.",
   },
   {
     icon: Clock,
@@ -342,11 +347,17 @@ function Testimonios() {
           {/* Desktop Table */}
           <div className="hidden md:block">
             <div className="grid grid-cols-3 text-center mb-4">
-              <div className="text-sm font-bold text-gris-medio uppercase tracking-wider py-4">Modelo tradicional</div>
-              <div className="text-sm font-bold text-petroleo uppercase tracking-wider py-4 bg-turquesa/5 rounded-t-xl border-x border-t border-turquesa/20">Modelo Xentra</div>
-              <div className="text-sm font-bold text-gris-medio uppercase tracking-wider py-4">Lo que ganas</div>
+              <div className="text-sm font-bold text-gris-medio uppercase tracking-wider py-4">
+                Modelo tradicional
+              </div>
+              <div className="text-sm font-bold text-petroleo uppercase tracking-wider py-4 bg-turquesa/5 rounded-t-xl border-x border-t border-turquesa/20">
+                Modelo Xentra
+              </div>
+              <div className="text-sm font-bold text-gris-medio uppercase tracking-wider py-4">
+                Lo que ganas
+              </div>
             </div>
-            
+
             <div className="space-y-3">
               {comparativaMetodologia.map((item, i) => (
                 <div key={i} className="grid grid-cols-3 items-center group">
@@ -354,13 +365,13 @@ function Testimonios() {
                   <div className="p-6 bg-gris-claro/50 rounded-l-xl text-gris-medio text-sm border-y border-l border-gris-secundario text-center">
                     {item.tradicional}
                   </div>
-                  
+
                   {/* Xentra */}
                   <div className="relative z-10 p-6 bg-white border-2 border-turquesa shadow-[0_10px_30px_-10px_rgba(15,104,120,0.2)] text-petroleo font-bold text-base text-center scale-105 rounded-xl flex items-center justify-center gap-2">
                     <Check size={18} className="text-turquesa shrink-0" strokeWidth={3} />
                     {item.xentra}
                   </div>
-                  
+
                   {/* Ganas */}
                   <div className="p-6 bg-gris-claro/50 rounded-r-xl text-gris-medio text-sm border-y border-r border-gris-secundario text-center">
                     {item.gana}
@@ -375,18 +386,24 @@ function Testimonios() {
             {comparativaMetodologia.map((item, i) => (
               <div key={i} className="space-y-2">
                 <div className="p-4 bg-gris-claro rounded-lg text-gris-medio text-xs border border-gris-secundario">
-                  <span className="block text-[10px] uppercase font-bold mb-1 opacity-60">Modelo tradicional</span>
+                  <span className="block text-[10px] uppercase font-bold mb-1 opacity-60">
+                    Modelo tradicional
+                  </span>
                   {item.tradicional}
                 </div>
                 <div className="p-5 bg-white border-2 border-turquesa rounded-xl text-petroleo font-bold text-sm shadow-md flex items-center gap-3">
                   <Check size={18} className="text-turquesa shrink-0" strokeWidth={3} />
                   <div>
-                    <span className="block text-[10px] uppercase font-bold mb-1 text-turquesa">Modelo Xentra</span>
+                    <span className="block text-[10px] uppercase font-bold mb-1 text-turquesa">
+                      Modelo Xentra
+                    </span>
                     {item.xentra}
                   </div>
                 </div>
                 <div className="p-4 bg-gris-claro rounded-lg text-gris-medio text-xs border border-gris-secundario">
-                  <span className="block text-[10px] uppercase font-bold mb-1 opacity-60">Lo que ganas</span>
+                  <span className="block text-[10px] uppercase font-bold mb-1 opacity-60">
+                    Lo que ganas
+                  </span>
                   {item.gana}
                 </div>
               </div>
@@ -403,7 +420,10 @@ function Faq() {
   return (
     <section id="faq" className="scroll-mt-24 bg-white py-16 md:py-24">
       <div className="mx-auto max-w-3xl px-5">
-        <SectionTitle kicker="Preguntas frecuentes" title="Todo lo que sueles preguntar antes de inscribirte" />
+        <SectionTitle
+          kicker="Preguntas frecuentes"
+          title="Todo lo que sueles preguntar antes de inscribirte"
+        />
         <div className="mt-10 divide-y divide-gris-secundario border-y border-gris-secundario">
           {faqs.map((f, i) => {
             const open = abierta === i;

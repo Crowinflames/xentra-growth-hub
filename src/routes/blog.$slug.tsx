@@ -12,7 +12,12 @@ export const Route = createFileRoute("/blog/$slug")({
   },
   head: ({ params, loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Artículo no disponible | Xentra" }, { name: "robots", content: "noindex" }] };
+      return {
+        meta: [
+          { title: "Artículo no disponible | Xentra" },
+          { name: "robots", content: "noindex" },
+        ],
+      };
     }
     const { post } = loaderData;
     return {
@@ -90,9 +95,13 @@ function ArticuloPage() {
 
         <div className="relative mx-auto max-w-3xl px-5 pt-12 pb-8 md:pt-16">
           <nav aria-label="Ruta de navegación" className="mb-6 text-xs text-gris-medio">
-            <Link to="/" className="hover:text-turquesa">Inicio</Link>
+            <Link to="/" className="hover:text-turquesa">
+              Inicio
+            </Link>
             <span className="mx-2">/</span>
-            <Link to="/blog" className="hover:text-turquesa">Blog</Link>
+            <Link to="/blog" className="hover:text-turquesa">
+              Blog
+            </Link>
             <span className="mx-2">/</span>
             <span className="text-gris-oscuro">{post.categoria}</span>
           </nav>
@@ -113,9 +122,7 @@ function ArticuloPage() {
               {post.autor.iniciales}
             </span>
             <div className="text-sm">
-              <p className="font-semibold text-petroleo">
-                {post.autor.nombre}
-              </p>
+              <p className="font-semibold text-petroleo">{post.autor.nombre}</p>
               <p className="text-gris-medio">
                 {post.autor.cargo} · Publicado el {fecha(post.fecha)}
                 {post.actualizado && post.actualizado !== post.fecha
@@ -156,7 +163,10 @@ function ArticuloPage() {
                 <ul className="mt-5 space-y-2">
                   {sec.bullets.map((b) => (
                     <li key={b} className="flex gap-3 text-base text-gris-oscuro">
-                      <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-turquesa-claro" />
+                      <span
+                        aria-hidden="true"
+                        className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-turquesa-claro"
+                      />
                       {b}
                     </li>
                   ))}
@@ -248,8 +258,8 @@ function CtaArticulo({ post }: { post: { programaRelacionado: string } }) {
       <Kicker>Programa relacionado</Kicker>
       <p className="mt-3 text-lg font-bold text-petroleo">{post.programaRelacionado}</p>
       <p className="mt-2 text-sm leading-relaxed text-gris-oscuro">
-        Lleva estas prácticas a tu equipo con acompañamiento de un mentor y un plan de aplicación
-        de 30 días.
+        Lleva estas prácticas a tu equipo con acompañamiento de un mentor y un plan de aplicación de
+        30 días.
       </p>
       <CtaPrimary href="/#programas" className="mt-5">
         Ver programa

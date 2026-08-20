@@ -53,7 +53,9 @@ function BlogIndex() {
         <Brochazo className="top-[-60px] right-[-8%] h-52 w-[420px]" opacity={0.13} />
         <div className="relative mx-auto max-w-6xl px-5">
           <nav aria-label="Ruta de navegación" className="mb-6 text-xs text-gris-medio">
-            <Link to="/" className="hover:text-turquesa">Inicio</Link>
+            <Link to="/" className="hover:text-turquesa">
+              Inicio
+            </Link>
             <span className="mx-2">/</span>
             <span className="text-gris-oscuro">Blog</span>
           </nav>
@@ -127,8 +129,12 @@ export function ArticleCard({ slug }: { slug: string }) {
         </h3>
         <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-gris-oscuro">{post.bajada}</p>
         <p className="mt-auto pt-5 text-xs text-gris-medio">
-          {new Date(post.fecha).toLocaleDateString("es-PE", { day: "numeric", month: "long", year: "numeric" })} ·{" "}
-          {post.lectura}
+          {new Date(post.fecha).toLocaleDateString("es-PE", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })}{" "}
+          · {post.lectura}
         </p>
       </div>
     </Link>

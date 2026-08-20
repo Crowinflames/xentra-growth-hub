@@ -16,17 +16,17 @@ export function Logo({ variant = "dark" }: { variant?: "dark" | "light" }) {
   );
 }
 
-export function Brochazo({
-  className,
-  opacity = 0.12,
-}: {
-  className?: string;
-  opacity?: number;
-}) {
+export function Brochazo({ className, opacity = 0.12 }: { className?: string; opacity?: number }) {
   return <span aria-hidden="true" className={cn("brochazo", className)} style={{ opacity }} />;
 }
 
-export function Kicker({ children, tone = "turquesa" }: { children: ReactNode; tone?: "turquesa" | "light" }) {
+export function Kicker({
+  children,
+  tone = "turquesa",
+}: {
+  children: ReactNode;
+  tone?: "turquesa" | "light";
+}) {
   return (
     <p className={cn("kicker", tone === "light" ? "text-turquesa-claro" : "text-turquesa")}>
       {children}
@@ -43,8 +43,7 @@ export function Claim({
 }) {
   return (
     <span className={cn(variant === "light" ? "text-white" : "text-petroleo", className)}>
-      Educación que se vive. Conocimiento que se{" "}
-      <span className="text-naranja">aplica</span>.
+      Educación que se vive. Conocimiento que se <span className="text-naranja">aplica</span>.
     </span>
   );
 }
@@ -111,8 +110,17 @@ export function CtaPrimary({
     "bg-naranja text-white shadow-sm hover:-translate-y-0.5 hover:shadow-lg hover:brightness-110",
     className,
   );
-  if (to) return <Link to={to} className={cls}>{children}</Link>;
-  return <a href={href ?? "#programas"} className={cls}>{children}</a>;
+  if (to)
+    return (
+      <Link to={to} className={cls}>
+        {children}
+      </Link>
+    );
+  return (
+    <a href={href ?? "#programas"} className={cls}>
+      {children}
+    </a>
+  );
 }
 
 export function CtaSecondary({

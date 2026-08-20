@@ -2,8 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 import { posts } from "@/lib/blog-data";
 
-// TODO: reemplazar con la URL del proyecto cuando exista dominio propio.
-const BASE_URL = "";
+// Asumido a partir del dominio de contacto (hola@xentra.pe). Confirmar/ajustar
+// apenas el dominio de producción esté 100% definido y publicado.
+const BASE_URL = "https://xentra.pe";
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {

@@ -79,7 +79,7 @@ export const programas: Programa[] = [
 export const faqs = [
   {
     q: "¿Cuánto cuestan los programas?",
-    a: "El curso \"Primer Liderazgo\" tiene una inversión de S/ 650.\nPróximamente comunicaremos el valor del taller \"Liderar con IA sin perder identidad\"",
+    a: 'El curso "Primer Liderazgo" tiene una inversión de S/ 650.\nPróximamente comunicaremos el valor del taller "Liderar con IA sin perder identidad"',
   },
   {
     q: "¿En qué se diferencia de un diplomado tradicional?",
