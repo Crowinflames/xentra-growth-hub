@@ -9,6 +9,7 @@ const nav = [
   { label: "Programas", href: "/#programas" },
   { label: "Blog", href: "/blog" },
   { label: "Preguntas frecuentes", href: "/#faq" },
+  { label: "Contacto", href: "/#contacto" },
 ];
 
 export function Header() {

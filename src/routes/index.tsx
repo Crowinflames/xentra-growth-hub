@@ -17,6 +17,7 @@ import { useState } from "react";
 import heroLiderAsset from "@/assets/hero-lider.jpg.asset.json";
 const heroLider = heroLiderAsset.url;
 import { Header, Footer } from "@/components/xentra/site-chrome";
+import { LeadForm } from "@/components/xentra/lead-form";
 import {
   Brochazo,
   Claim,
@@ -99,6 +100,7 @@ function Index() {
         <Programas />
         <PorQue />
         <Faq />
+        <Contacto />
         <UltimosArticulos />
         <CtaFinal />
       </main>
@@ -334,7 +336,10 @@ function PorQue() {
 
 function Testimonios() {
   return (
-    <section id="metodologia" className="relative scroll-mt-24 overflow-hidden bg-white py-16 md:py-24">
+    <section
+      id="metodologia"
+      className="relative scroll-mt-24 overflow-hidden bg-white py-16 md:py-24"
+    >
       <Brochazo className="bottom-[-70px] right-[-8%] h-48 w-[400px]" opacity={0.1} />
       <div className="relative mx-auto max-w-6xl px-5">
         <SectionTitle
@@ -449,6 +454,27 @@ function Faq() {
             );
           })}
         </div>
+      </div>
+    </section>
+  );
+}
+
+function Contacto() {
+  return (
+    <section id="contacto" className="relative scroll-mt-24 bg-gris-claro py-16 md:py-24">
+      <div className="relative mx-auto grid max-w-6xl gap-10 px-5 md:grid-cols-2 md:items-center">
+        <div>
+          <Kicker>Hablemos</Kicker>
+          <span className="trazo-naranja mt-5" />
+          <h2 className="mt-5 text-3xl leading-tight font-extrabold tracking-tight text-petroleo md:text-4xl">
+            ¿Tienes dudas antes de inscribirte?
+          </h2>
+          <p className="mt-4 max-w-md text-base leading-relaxed text-gris-oscuro">
+            Déjanos tus datos y te contactamos para resolver tus preguntas sobre el programa que más
+            se ajusta a ti y a tu equipo — sin compromiso.
+          </p>
+        </div>
+        <LeadForm />
       </div>
     </section>
   );
