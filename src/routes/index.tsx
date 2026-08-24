@@ -527,8 +527,14 @@ function CtaFinal() {
           semanas.
         </p>
         <div className="mt-9 flex flex-wrap gap-3">
-          <CtaPrimary href="#programas">Reserva tu vacante</CtaPrimary>
-          <CtaSecondary href="mailto:hola@xentra.pe" variant="light">
+          <CtaPrimary
+            href="https://wa.me/51941200421?text=Hola,%20quiero%20reservar%20mi%20vacante%20en%20Xentra"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Reserva tu vacante
+          </CtaPrimary>
+          <CtaSecondary href="#contacto" variant="light">
             Hablar con el equipo
           </CtaSecondary>
         </div>

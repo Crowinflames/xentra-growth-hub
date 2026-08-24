@@ -49,7 +49,9 @@ export const programas: Programa[] = [
     inscripcionesDesde: "24 de agosto de 2026",
     grupoInicio: "6 de octubre de 2026",
     cta: "Reserva tu vacante",
-    ctaHref: "#cta-final",
+    ctaHref:
+      "https://wa.me/51941200421?text=Hola,%20quiero%20reservar%20mi%20vacante%20en%20Primer%20Liderazgo",
+    ctaExternal: true,
   },
   {
     slug: "liderar-con-ia-sin-perder-identidad",

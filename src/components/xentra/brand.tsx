@@ -99,11 +99,15 @@ export function CtaPrimary({
   href,
   to,
   className,
+  target,
+  rel,
 }: {
   children: ReactNode;
   href?: string;
   to?: string;
   className?: string;
+  target?: string;
+  rel?: string;
 }) {
   const cls = cn(
     ctaBase,
@@ -117,7 +121,7 @@ export function CtaPrimary({
       </Link>
     );
   return (
-    <a href={href ?? "#programas"} className={cls}>
+    <a href={href ?? "#programas"} className={cls} target={target} rel={rel}>
       {children}
     </a>
   );
